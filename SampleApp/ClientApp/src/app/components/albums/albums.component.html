@@ -1,0 +1,16 @@
+<h2>Albums</h2>
+<div class="grid">
+    <a *ngFor="let p of photos">
+        <div class="col"
+             [class.selected]="p === photo"
+             (click)="onSelect(p)">
+            <img src="{{ p.thumbnailUrl }}">
+        </div>
+    </a>
+</div>
+<div *ngIf="albumPhotos" class="highlighted-col">
+    <h3>{{ photo.title }}</h3>
+    <ul *ngFor="let thumbnail of albumPhotos" class="thumbnails">
+        <img src="{{ thumbnail }}">
+    </ul>
+</div>

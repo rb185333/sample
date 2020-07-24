@@ -1,0 +1,24 @@
+.lib-content {
+  margin: 1rem 0.25rem;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+h2 {
+  margin: 1rem 1rem;
+  letter-spacing: 0.5px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
+  color: #353535;
+}
+
+p {
+  margin-left: 1rem;
+  letter-spacing: 0.5px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-style: oblique;
+  font-size: 11pt;
+  color: #8f8f8f;
+}

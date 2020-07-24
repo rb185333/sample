@@ -1,0 +1,118 @@
+.user-container {
+  margin-left: 2rem;
+  width: fit-content;
+}
+
+h2 {
+  margin-left: 0rem;
+  letter-spacing: 0.5px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14pt;
+  color: #9fa1a1;
+}
+
+.users {
+  width: fit-content;
+  padding-left: 0rem;
+  list-style-type: none;
+  letter-spacing: 0.5px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 11pt;
+  color: #353535;
+}
+
+.users li {
+  margin-left: 0.25rem;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
+  min-width: fit-content;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  align-content: center;
+  background-color: #FFFFFF;
+}
+
+.users li:hover {
+  color: #1774ff;
+  top: .15em;
+}
+
+.users li.selected {
+  border-radius: 4px;
+  background-color: #acadad;
+  color: white;
+}
+
+.users li.selected:hover {
+  border-radius: 4px;
+  background-color: #acadad;
+  color: white;
+}
+
+.ng-content {
+  margin-top: 1rem;
+  padding-top: 1.5rem;
+  border-top: 0.2pt solid #cccccc;
+}
+
+.lib-list {
+  padding: 1rem 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.25px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-style: oblique;
+  font-size: 11pt;
+  color: #353535;
+}
+
+.stack {
+  margin: 0.5 auto;
+  padding: 0.5rem;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.grid {
+  margin: 1rem;
+  padding: 1rem;
+  align-content: center;
+}
+
+.module {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  max-height: 120px;
+  min-width: 120px;
+  background-color: #3f525c;
+  border-radius: 2px;
+}
+
+.module:hover {
+  background-color: #eee;
+  cursor: pointer;
+  color: #607d8b;
+}
+
+@media (max-width: 600px) {
+  .module {
+    font-size: 10px;
+    max-height: 75px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    margin: 0;
+  }
+  .module {
+    min-width: 60px;
+  }
+}

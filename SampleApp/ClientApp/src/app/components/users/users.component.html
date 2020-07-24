@@ -1,0 +1,29 @@
+
+<div class="user-container">
+    <h2>Users</h2>
+    <ul class="users">
+        <li *ngFor="let user of users"
+            [class.selected]="user === selectedUser"
+            (click)="onSelect(user)">
+            <span class="item">{{user.name}}</span>
+        </li>
+    </ul>
+    <div *ngIf="selectedUser" class="ng-content">
+        <h2>{{ selectedUser.name }}'s Library</h2>
+        <div class="grid">
+            <a *ngFor="let url of thumbnails">
+                <div class="stack">
+                    <img src="{{url}}">
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- <div *ngIf="albumPhotos">
+        <ul class="photos">
+            <a *ngFor="let photo of photos">
+                [class.selected]="photo === selectedPhoto"
+                (click)="onSelectPhoto(photo)">
+            </a>
+        </ul>
+    </div> -->
+</div>
